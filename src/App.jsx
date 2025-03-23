@@ -1,4 +1,5 @@
 import { useState } from "react";
+import etanolGasolina from "./assets/etanol-gasolina.png";
 import "./app.css";
 
 // Componente que usa Props e Props Children
@@ -66,8 +67,6 @@ const FuelCalculator = () => {
 };
 
 // Componente Principal
-import etanolGasolina from "./assets/etanol-gasolina.png";
-
 const App = () => {
   return (
     <>
