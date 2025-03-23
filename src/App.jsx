@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./app.css";
 
 // Componente que usa Props e Props Children
 const Card = ({ title, children }) => {
@@ -65,12 +66,13 @@ const FuelCalculator = () => {
 };
 
 // Componente Principal
+import etanolGasolina from "./assets/etanol-gasolina.png";
+
 const App = () => {
   return (
     <>
-      {/* Adiciona uma div container para aplicar o CSS de centralização */}
       <div className="container">
-        <img src="/etanol-gasolina.png" alt="Comparação entre etanol e gasolina" className="w-32 mb-4" />
+        <img src={etanolGasolina} alt="Comparação entre etanol e gasolina" className="w-32 mb-4" />
         <Card title="Álcool ou Gasolina?">
           <p>Insira os valores abaixo para descobrir qual combustível é mais vantajoso.</p>
         </Card>
@@ -79,6 +81,7 @@ const App = () => {
     </>
   );
 };
+
 
 
 export default App;
